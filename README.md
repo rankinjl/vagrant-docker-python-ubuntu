@@ -1,5 +1,5 @@
 # vagrant-docker-python-ubuntu
-Set up a Redis web server inside a Docker container using Python and Vagrant on an Ubuntu VM created with VirtualBox and Vagrant.
+Set up a Redis database server inside a Docker container using Python and Vagrant on an Ubuntu VM created with VirtualBox and Vagrant.
 
 Edited by Jessica Rankins on 6/15/2017
 
@@ -8,7 +8,7 @@ GOALS:
 		on a linux machine (Ubuntu)
 - Demonstrate Infrastructure as code principles (script configures 
 		and provisions environments to ensure environment parity)
-- Networking: Forwarded ports to host from VM from Web container: 
+- Networking: Forwarded ports to host from VM from database container: 
 		80 to 8080 to 8080 for Redis demonstration via Python on Linux
 		
 PREREQUISITES: ON WINDOWS HOST COMPUTER, HAD TO:
@@ -24,7 +24,7 @@ TO EXECUTE:
 - after successful vagrant up, ```vagrant ssh``` into Ubuntu VirtualBox VM
     - ```cd /vagrant/Docker```
     - ```vagrant up``` to create Redis container using Python
-- See example web page in Windows host browser at 127.0.0.1:8080
+- See example Redis web page in Windows host browser at 127.0.0.1:8080
 	
 - When done, ```vagrant destroy``` in /vagrant/Docker to get rid of container
 - ```exit``` from vagrant ssh
